@@ -1,0 +1,25 @@
+{
+  "name": "monorepo-mf-poc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:ui-library": "pnpm -F ui-library run dev",
+    "dev:app-router": "pnpm -F app-router run dev",
+    "dev:pages-router": "pnpm -F pages-router run dev",
+    "build": "pnpm -r run build",
+    "build:ui-library": "pnpm -F ui-library run build",
+    "build:apps": "pnpm -r --filter ./apps run build",
+    "prod:lib": "node scripts/serve-prod.js",
+    "lint": "pnpm -r run lint",
+    "type-check": "pnpm -r run type-check",
+    "clean": "pnpm -r run clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.50.0"
+  }
+}

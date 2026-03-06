@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production & Build outputs
+/build
+/dist
+/.next
+/out
+
+# Monorepo builds
+packages/*/dist
+packages/*/.next
+packages/*/build
+apps/*/.next
+apps/*/dist
+apps/*/build
+
+# Misc
+.DS_Store
+*.pem
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Debug
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Turbo
+.turbo/
+turbo.json
+
+# OS
+Thumbs.db
